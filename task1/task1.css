@@ -31,3 +31,27 @@ header h2 {
   font-size: 14px;
   font-weight: 400;
 }
+
+img {
+  display: block;
+  padding: 20px 50px;
+  width: calc(100% - 100px);
+}
+
+.img-container {
+  max-width: 100%;
+  place-items: center;
+}
+
+.kn {
+  background-color: #ead963;
+}
+.of {
+  background-color: #1992d4;
+}
+.gr {
+  background-color: #003399;
+}
+.mw {
+  background-color: #df4356;
+}
