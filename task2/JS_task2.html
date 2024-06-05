@@ -49,8 +49,7 @@ header h2 {
   // ここに処理を追記
   "use strict";
   const wanted = window.prompt("何をお求めですか?");
-  const message = wanted === "りんご" ? "1つ150円です" : wanted === "ばなな" ? "1つ100円です" : "品切れです";
-  alert(message);
+  wanted === "りんご" ? console.log("1つ150円です") : wanted === "ばなな" ? console.log("1つ100円です") : alert("品切れです");
 </script>
 </body>
 </html>
