@@ -1,4 +1,27 @@
 /* ここに記載する */
+img {
+  display: block;
+  padding: 20px 50px;
+  width: calc(100% - 100px);
+}
+
+.img-container {
+  max-width: 100%;
+  place-items: center;
+}
+
+.kn {
+  background-color: #ffbf00;
+}
+.of {
+  background-color: #1992d4;
+}
+.gr {
+  background-color: #003399;
+}
+.mw {
+  background-color: #df4356;
+}
 
 /* 以下は修正しない */
 html,
@@ -8,7 +31,7 @@ body {
 }
 header {
   background-color: #1aaedb;
-  border-bottom: #ead963 6px solid;
+  border-bottom: #ffbf00 6px solid;
 }
 .container {
   padding: 16px;
