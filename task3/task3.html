@@ -114,7 +114,6 @@ const fileManage = {
         deleteAuth: "営業部",
     }
 }
-const list = document.getElementById("list");
 
 // 手順1
 console.log(fileManage);
@@ -131,7 +130,7 @@ Object.keys(fileManage).forEach((e) => {
    if (fileManage[e]["viewAuth"] === "Everyone") {
     const li = document.createElement("li");
     li.textContent = fileManage[e]["folderName"];
-    list.appendChild(li);
+    document.getElementById("list").appendChild(li);
    }
 })
 </script>
