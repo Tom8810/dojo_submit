@@ -94,7 +94,7 @@ li {
   "use strict";
 
 // 使う変数
-const obj = {
+const fileManage = {
     f001: {
         folderName: "情報システム部",
         viewAuth: "Everyone",
@@ -114,25 +114,23 @@ const obj = {
         deleteAuth: "営業部",
     }
 }
-const folders = Object.keys(obj);
-const folderProps = Object.keys(obj.f001);
 const list = document.getElementById("list");
 
 // 手順1
-console.log(obj);
+console.log(fileManage);
 
 // 手順2
-folders.forEach((e) => {
-    folderProps.forEach((ele) => {
-        document.getElementById(`${e}-${ele}`).textContent = obj[`${e}`][`${ele}`]
+Object.keys(fileManage).forEach((e) => {
+    Object.keys(fileManage[e]).forEach((ele) => {
+        document.getElementById(`${e}-${ele}`).textContent = fileManage[e][ele]
     })
 })
 
 // 手順3
-folders.forEach((e) => {
-   if (obj[`${e}`]["viewAuth"] === "Everyone") {
+Object.keys(fileManage).forEach((e) => {
+   if (fileManage[e]["viewAuth"] === "Everyone") {
     const li = document.createElement("li");
-    li.textContent = obj[`${e}`]["folderName"];
+    li.textContent = fileManage[e]["folderName"];
     list.appendChild(li);
    }
 })
