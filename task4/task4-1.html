@@ -52,16 +52,16 @@ header h2 {
 </main>
 <script>
   // ここに処理を記載する
-  function changeTotal(e) {
+  const changeTotal = (chkboxEl) => {
     let currentTotal = Number(document.getElementById("price").textContent)
-    currentTotal = e.checked ? 
-      currentTotal + Number(e.value) : 
-      currentTotal - Number(e.value);
+    currentTotal = chkboxEl.checked ? 
+      currentTotal + Number(chkboxEl.value) : 
+      currentTotal - Number(chkboxEl.value);
     document.getElementById("price").textContent = currentTotal;
   };
 
-  Array.from(document.getElementsByClassName("chk")).forEach((e) => {
-    e.onchange = () => changeTotal(e);
+  Array.from(document.getElementsByClassName("chk")).forEach((chkboxEl) => {
+    chkboxEl.onchange = () => changeTotal(chkboxEl);
   });
 </script>
 </body>

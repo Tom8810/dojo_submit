@@ -68,11 +68,11 @@ header h2 {
 </main>
 <script>
   // ここに処理を記載する
-  function onClickButton() {
+  const onClickButton = () => {
     let total = 3900;
-    Array.from(document.getElementsByClassName("chk")).forEach((e, i) => {
-      total = e.checked ?
-         total + Number(e.value) * Array.from(document.getElementsByClassName("slct"))[i].value : total;
+    Array.from(document.getElementsByClassName("chk")).forEach((chkboxEl, index) => {
+      total = chkboxEl.checked ?
+         total + Number(chkboxEl.value) * Array.from(document.getElementsByClassName("slct"))[index].value : total;
     })
     document.getElementById("price").textContent = total;
   };
