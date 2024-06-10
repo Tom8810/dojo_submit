@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: lightgray;
+    padding: 8px 12px;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 24px;
+}
+.table {
+    display: grid;
+    flex-direction: column;
+    margin-top: 48px;
+}
+.table-row {
+    display: flex;
+    flex-basis: auto;
+}
+.table-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid black;
+}
+.col1 {
+    width: 100px;
+}
+.col2 {
+    width: 100px;
+}
+.col3 {
+    width: 400px;
+}
