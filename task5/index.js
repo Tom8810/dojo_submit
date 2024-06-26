@@ -23,7 +23,7 @@ const outputData = (dataArray) => {
 
         titleTd.appendChild(link);
         row.append(dayTd, categoryTd, titleTd);
-        table.append(row)
+        table.appendChild(row)
     })
     document.getElementById("table").appendChild(table);   
 }
