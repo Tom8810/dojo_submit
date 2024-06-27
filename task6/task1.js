@@ -16,7 +16,7 @@
                 value: {
                     Action5: {
                         type: "DROP_DOWN",
-                        value: `${action}`
+                        value: action
                     },
                     状況: {
                         type: "CHECK_BOX",
