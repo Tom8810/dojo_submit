@@ -29,6 +29,7 @@
     ]
     kintone.events.on(targetEvents, (event) => {
         setString(event);
+        event.record["重複禁止項目_文字列"].disabled = event.record["重複禁止項目_文字列"].disabled || true;
         return event;
     })
 })();
